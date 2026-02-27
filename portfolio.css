@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial ,sans-serif;
+}
+body{
+    background: white;
+    color: black;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.linkedin{
+    text-decoration: none;
+    color: #0A66C2;
+    font-weight: bold;
+}
+.info{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+.infoleft{
+    margin: 40px;
+}
+.infoleft img{
+    width: 250px;
+    border-radius: 10px;
+}
+.inforight{
+    flex: 1;
+}
+.inforight>p:nth-child(2){
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+.skill-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.skills>:first-child{
+    margin-top: 15px;
+}
+.skill{
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.skill:hover{
+    background: black;
+    color: white;
+    transition: 0.25s;
+}
+.contact{
+    margin-top: 50px;
+}
+.contact form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact input, .contact textarea{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+}
+.contact button{
+    padding: 10px;
+    border: none;
+    background: #cfcfcf;
+    border-radius: 5px; ;
+}
+.contact button:hover{
+    background: #b6b6b6;
+}
+
+@media (max-width: 768px){
+    .info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .infoleft img{
+        width: 180px;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
